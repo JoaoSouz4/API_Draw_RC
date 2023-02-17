@@ -1,9 +1,10 @@
 //Conexão com o Mongo
 
 const mongoose = require("mongoose");
+require('dotenv').config();
 
 async function startDB(){
-    await mongoose.connect('mongodb+srv://joaosouz8:sorvete@cluster0.gc4ly0f.mongodb.net/draws',  {
+    await mongoose.connect( process.env.MONGODB_ATLAS_URL,  {
         UseNewUrlParser: true,
         useUnifiedTopology: true
     });

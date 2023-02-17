@@ -1,6 +1,5 @@
 const { Router } = require("express");
 const DrawController = require("./Controllers/DrawController");
-const itemModel= require('./models/drawModel');
 const routes =  Router();
 
 routes.get('/', (req,res)=>{
