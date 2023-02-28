@@ -4,6 +4,7 @@ const routes = require('./routes');
 const cors = require('cors');
 const app = express();
 const Loaders = require('./Loaders/index');
+
 require('dotenv').config();
 
 app.use('/files', express.static(path.resolve(__dirname, "uploads")))
